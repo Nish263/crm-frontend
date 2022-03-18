@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 import { DefaultLayout } from "./components/layout/DefaultLayout";
 // import { Dashboard } from "./pages/Entry/dashboard/Dashboard.page";
-import { AddTicket } from "./pages/new-ticket/AddTicket.page";
+// import { AddTicket } from "./pages/new-ticket/AddTicket.page";
 
-import { Entry } from "./pages/Entry/Entry.page";
+// import { Entry } from "./pages/Entry/Entry.page";
+import { TicketList } from "./pages/ticket-list/TicketList.page";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <Entry /> */}
       <DefaultLayout>
         {/* <Dashboard /> */}
-        <AddTicket />
+        {/* <AddTicket /> */}
+        <TicketList />
       </DefaultLayout>
     </div>
   );

@@ -3,37 +3,37 @@ import { Table } from "react-bootstrap";
 import PropTypes from "prop-types";
 
 export const TicketTable = ({ tickets }) => {
-  // if (!tickets.length)
-  return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Subjects</th>
-          <th>Status</th>
-          <th>Opened date</th>
-        </tr>
-      </thead>
-      <tbody>
-        {tickets.length ? (
-          tickets.map((row) => (
-            <tr key={row.id}>
-              <td>{row.id}</td>
-              <td>{row.subject}</td>
-              <td>{row.status}</td>
-              <td>{row.addedAt}</td>
-            </tr>
-          ))
-        ) : (
+  if (!tickets.length)
+    return (
+      <Table striped bordered hover>
+        <thead>
           <tr>
-            <td colSpan="4" className="text-centre">
-              No ticket to show
-            </td>
+            <th>#</th>
+            <th>Subjects</th>
+            <th>Status</th>
+            <th>Opened date</th>
           </tr>
-        )}
-      </tbody>
-    </Table>
-  );
+        </thead>
+        <tbody>
+          {tickets.length ? (
+            tickets.map((row) => (
+              <tr key={row.id}>
+                <td>{row.id}</td>
+                <td>{row.subject}</td>
+                <td>{row.status}</td>
+                <td>{row.addedAt}</td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="4" className="text-centre">
+                No ticket to show
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </Table>
+    );
 };
 
 TicketTable.propTypes = {

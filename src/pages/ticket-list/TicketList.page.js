@@ -13,7 +13,6 @@ export const TicketList = () => {
 
   const handleOnChange = (e) => {
     const { value } = e.target;
-
     setStr(value);
     searchTicket(value);
   };

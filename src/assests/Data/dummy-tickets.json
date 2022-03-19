@@ -3,7 +3,12 @@
     "id": 1,
     "subject": "Email certification expired",
     "status": "client response",
-    "addedAt": "2022-05-03"
+    "addedAt": "2022-05-03",
+    "history": [
+      { "date": "20-10-10", "message": "sgsgsgg", "messageBy": "client" },
+      { "date": "20-10-10", "message": "sgsgsgg", "messageBy": "client" },
+      { "date": "20-10-10", "message": "sgsgsgg", "messageBy": "operator" }
+    ]
   },
   {
     "id": 2,

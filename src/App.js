@@ -5,8 +5,8 @@ import { DefaultLayout } from "./components/layout/DefaultLayout";
 // import { AddTicket } from "./pages/new-ticket/AddTicket.page";
 
 // import { Entry } from "./pages/Entry/Entry.page";
-import { TicketList } from "./pages/ticket-list/TicketList.page";
-
+// import { TicketList } from "./pages/ticket-list/TicketList.page";
+import { Ticket } from "./pages/ticket/Ticket.page";
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,8 @@ function App() {
       <DefaultLayout>
         {/* <Dashboard /> */}
         {/* <AddTicket /> */}
-        <TicketList />
+        {/* <TicketList /> */}
+        <Ticket />
       </DefaultLayout>
     </div>
   );
